@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+
+  {% block stylesheet %}    
+  <link rel="stylesheet" href="{%static 'css/styles.css'%}">
+  {% endblock stylesheet %}
+    
+  {% block title %}
+  Raccaptos Scholarships
+  {% endblock title %}
+  
+
+{% block content %}
+  
+
+  
+  <header>
+    <img src="{%static 'img/logo.png'%}" width="80px" style="margin-top: 1rem" alt="">
+  </header>
+  <main>
+    <div class="home__div">
+      <h1 class="home__title">
+        Apeman Society
+      </h1>
+      <p class="home__subtitle">
+        Think you should be on the Apelist?
+      </p>
+
+      <div class="button__div auto__margin2">
+        <a href="{%url 'category_picker'%}" class="button button--flex" target="_blank" id="twitterLink" data-show-count="false">Start
+          here</a>
+
+      </div>
+
+
+    </div>
+  </main>
+  <footer>
+    <div class="footer__div">
+
+      <div class="footer__text">
+
+        <p class='footer__subtitle'>&#169; 2022 Apeman Society.
+        </p>
+      </div>
+      <img src="{%static 'img/bag2.png'%}" class="bag__img" alt="" srcset="">
+    </div>
+  </footer>
+{% endblock content %}
+
+{% block script %} 
+<script src="{%static 'js/index.js' %}"></script>
+{% endblock script %}
+  
+
+</html>

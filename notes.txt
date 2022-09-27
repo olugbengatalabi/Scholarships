@@ -1,0 +1,39 @@
+models. py
+
+4 type of applicants
+
+
+
+user_profile - twitter extension
+1. category of applicant
+wallet address
+sol balance
+
+
+models.py
+form will be based on category
+
+proceed to form
+4 different models for the four types of applicant
+
+
+hover over choose file should be pointer
+
+
+
+application model
+1. user twitter
+2. the wallet address
+3. the solana wallet balance
+4. the category
+5. the application text
+6. links 1
+7. link 2
+8. attached image
+9. twitter profile link
+10. suggestion and improvement
+11. is_submitted
+12. under_reviewed
+13. is_approved
+14. is_rejected
+15. 

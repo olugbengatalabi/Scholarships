@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+{% load static %}
+
+  {% block stylesheet %}
+    <link rel="stylesheet" href="{%static 'css/styles.css'%}">
+    <link rel="stylesheet" href="{%static 'css/step1.css'%}">
+  {% endblock stylesheet %}
+  <title>
+    {% block title %}
+    Categories
+    {% endblock title %}
+
+
+{% block content %}
+  <main>
+    <div class="connect__button-container">
+  
+      <div class="connect__wallet-div button__div">
+        <div class="connect__button">connect wallet</div>
+      </div>
+    </div>
+  
+    <div class="header__container">
+      <h1 class="header__text">
+        How best will you describe your NFT niche?
+      </h1>
+  
+    </div>
+  
+    <div class="category__container">
+      <div class="category__section">
+        <a class="category__div" href="">
+          <div class="category__text">
+            <h2 class="category__header">
+              Developer
+            </h2>
+            <p class="category__subtitle"> The backbone of web3</p>
+  
+          </div>
+          <div class="category__img">
+            <img src="{%static 'img/bag3.png'%}" alt="">
+  
+          </div>
+        </a>
+        <a class="category__div" href="">
+          <div class="category__text">
+            <h2 class="category__header">
+              Artist
+            </h2>
+            <p class="category__subtitle"> Picasso with the pen</p>
+  
+          </div>
+          <div class="category__img">
+            <img src="{%static 'img/19381128_6122185_prev_ui2.png'%}" alt="">
+          </div>
+        </a>
+        <a class="category__div" href="">
+          <div class="category__text">
+            <h2 class="category__header">
+              Community Builder
+            </h2>
+            <p class="category__subtitle">Moderators, Alpha hunters, Community managers, etc</p>
+          </div>
+          <div class="category__img">
+            <img src="{%static 'img/AFRICA_1_prev_ui.png'%}" alt="">
+          </div>
+        </a>
+      </div>
+      <div class="category__section">
+        <a class="category__div" href="">
+          <div class="category__text">
+            <h2 class="category__header">
+              Developer
+            </h2>
+            <p class="category__subtitle"> The backbone of web3</p>
+  
+          </div>
+          <div class="category__img">
+            <img src="{%static 'img/bag3.png'%}" alt="">
+          </div>
+        </a>
+        <a class="category__div" href="">
+          <div class="category__text">
+            <h2 class="category__header">
+              Artist
+            </h2>
+            <p class="category__subtitle"> Picasso with the pen</p>
+  
+          </div>
+          <div class="category__img">
+            <img src="{% static 'img/19381128_6122185_prev_ui2.png'%}" alt="">
+          </div>
+        </a>
+        <a class="category__div" href="">
+          <div class="category__text">
+            <h2 class="category__header">
+              Community Builder
+            </h2>
+            <p class="category__subtitle">Moderators, Alpha hunters, Community managers, etc</p>
+          </div>
+          <div class="category__img">
+            <img src="{%static 'img/AFRICA_1_prev_ui.png'%}" alt="">
+          </div>
+        </a>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p class='footer__subtitle'>&#169; 2022 Apeman Society.</p>
+  </footer>
+{% endblock content %}

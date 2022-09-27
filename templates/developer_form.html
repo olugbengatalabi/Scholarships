@@ -1,0 +1,168 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<title>
+  {% block title %}
+    Developer Application
+  {% endblock title %}
+    
+</title>
+
+
+{% block stylesheet %}
+  <link rel="stylesheet" href="{%static 'css/dev_form.css'%}">
+  <link rel="stylesheet" href="{%static 'css/file_upload.css'%}">
+{% endblock stylesheet %}
+
+
+{% block content %}
+    <div id="page" class="site">
+      <div class="container">
+        <div class="form-box">
+          <div class="progress">
+            <!-- <div class="logo"><a href="/">Apeman Society</a></div> -->
+            <div class="category__div">
+              <div class="category__text">
+                <h2 class="category__header">
+                  Developer
+                </h2>
+                <p class="category__subtitle"> The backbone of web3</p>
+    
+              </div>
+              <div class="category__img">
+                <img src="{% static 'img/bag3.png'%}" alt="">
+              </div>
+            </div>
+            <ul class="progress-steps">
+              <li class="step active">
+                <span>1</span>
+                <p>Application <br> <span>why should we bring you on?</span></p>
+              </li>
+              <li class="step">
+                <span>2</span>
+                <p>Proof<br><span>Let us see what you've done.</span></p>
+              </li>
+              <li class="step">
+                <span>3</span>
+                <p>Suggestions<br><span>Can you help us get better?</span></p>
+              </li>
+            </ul>
+          </div>
+          <form action="" id="application_form">
+            <div class="form-one form-step active">
+              <div class="bg-svg"></div>
+              <h2 class="form__header">Tell us a little bit about yourself <br> and what you've done in the Web3 space</h2>
+              <!-- <p class="form__subtitle">max-length: 500</p> -->
+              <!-- <div>
+                  <label class = "p_class">First Name</label>
+                  <input type="textarea" placeholder="Hi im the third scoop of solana">
+                </div> -->
+              <div class="application__form">
+                <p class="form__subtitle">max-length: 500</p>
+                <textarea name="" maxlength="350" id="" cols="30" rows="10"
+                  form="application_form">Hi, I'm the third scoop of Solana,</textarea>
+              </div>
+              <!-- <div>
+                  <label>Last Name</label>
+                  <input type="text" placeholder="e.g Bright">
+                </div> -->
+              <!-- <div class="brith">
+                  <label>Date of Birth</label>
+                  <div class="grouping">
+                    <input type="text" patter = "[0-9*" name="day" value="" min="0" max="31" placeholder="DD">
+                    <input type="text" patter = "[0-9*" name="month" value="" min="0" max="12" placeholder="MM">
+                    <input type="text" patter = "[0-9*" name="year" value="" min="0" max="2050" placeholder="YYYY">
+                  </div>
+    
+                </div> -->
+            </div>
+            <div class="form-two form-step">
+              <div class="bg-svg"></div>
+              <h2 class="form__header">Let us see your best works<br></h2>
+              <p class="form__subtitle">Feel free to add a link to your Github profile</p>
+              <div>
+                <label class="label" for="link1">Link 1</label>
+                <input type="url" name="link1" placeholder="https://www...">
+              </div>
+              <div>
+                <label for="link2">Link 2</label>
+                <input type="url" name="link2" placeholder="https://www...">
+              </div>
+              <div>
+                <!-- <label for="attachment" class="attachment">
+                    Attach an image<span class="category__subtitle" style="margin-left: 4px;">    
+                    (optional)</span>
+                    <br>
+                  </label>
+                  <input type="file" name="attachment" class = "attachment__input" accept="image/png, image/jpg, image/gif, image/jpeg"> -->
+    
+                <div class="file-upload">
+                  <label for="chooseFile" class="attachment">
+                    Attach an image<span class="category__subtitle">
+                      (optional)</span>
+                    <br>
+                  </label>
+                  <div class="file-select">
+                    <div class="file-select-button" id="fileName">Choose File</div>
+                    <div class="file-select-name" id="noFile">No file chosen...</div>
+                    <input type="file" name="chooseFile" id="chooseFile"
+                      accept="image/png, image/jpg, image/gif, image/jpeg">
+                  </div>
+                </div>
+              </div>
+              <!-- <div>
+                  <label for="">Adress</label>
+                  <input type="text" placeholder="street Adress">
+                </div>
+                <div>
+                  <label for="">Adress</label>
+                  <input type="text" placeholder="App, Suite, Building">
+                </div>
+                <div>
+                  <label for="">City</label>
+                  <input type="text" placeholder="City">
+                </div>
+                <div>
+                  <label for="">State</label>
+                  <input type="text" placeholder="State/Province">
+                </div>
+                <div>
+                  <label for="">Zip Code</label>
+                  <input type="text" placeholder="Postal/Zip Code ">
+                </div> -->
+            </div>
+            <div class="form-three form-step">
+              <div class="bg-svg"></div>
+              <h2 class="form__header">Tell us new utilities <br> you'd like to see us add?<br></h2>
+              <!-- <p class="form__subtitle">max-length: 500</p> -->
+              <!-- <div>
+                            <label class = "p_class">First Name</label>
+                            <input type="textarea" placeholder="Hi im the third scoop of solana">
+                          </div> -->
+              <div class="application__form">
+                <!-- <p class="form__subtitle">max-length: 500</p> -->
+                <p class="form__subtitle">Help us be better buiders.</p>
+                <textarea name="" maxlength="350" id="" cols="30" rows="10" form="application_form"
+                  placeholder="Need you to make a pet Raccoon that shoots $Sol out of its ass"></textarea>
+              </div>
+
+            </div>
+            <div class="btn-group">
+
+              <i disabled class='btn-prev disabled bx bx-left-arrow-alt'></i>
+              <i class='btn-next bx bx-right-arrow-alt'></i>
+              <button class="btn-submit" type="button">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+{% endblock content %}
+
+
+{% block script %}
+    <script src="{%static 'js/forms.js' %}"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="{%static 'js/file_upload.js'%}"></script>
+{% endblock script %}
+  
